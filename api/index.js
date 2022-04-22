@@ -18,10 +18,6 @@ app.use(morgan("common"));
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
 
-app.get("/",(req,res)=>{
-  res.send("Hello world!!")
-});
-
 app.listen(PORT,(req,res)=>{
     console.log(`Server running successfuly on PORT ${PORT}`);
 });
